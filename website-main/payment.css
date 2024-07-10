@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgb(241, 246, 245);
+    padding: 0.1rem;
+}
+
+#payment-home {
+    min-height: 95vh;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: aquamarine;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 1rem;
+}
+
+.header-content {
+    max-width: 80vw;
+    margin: 14px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: none;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 650px) {
+    .nav {
+        display: flex;
+    }
+}
+
+.nav-link {
+    color: #111112;
+    font-size: 1.125em;
+    font-weight: 600;
+    transition: color 0.1s;
+}
+
+.nav-link:hover {
+    color: royalblue;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: aquamarine;
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+    .menu-button {
+        display: block;
+    }
+
+}
+
+.menu-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+ul{
+    /* width: 100%; */
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    height: 50px;
+}
+li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+li a:hover{
+    background-color: rgb(114, 228, 228);
+    color: rgb(14, 50, 82);
+}
+li:first-child{
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 22px;
+    right: 23px;
+    height: 40vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(240, 248, 255, 0.422);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+#payment {
+    padding: 45px;
+    margin: 90px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.amount-section, .qr-section {
+    flex: 1;
+    padding: 35px;
+    text-align: center;
+}
+
+.amount-section {
+    background-color: #007BFF;
+    color: white;
+    height: 444px;
+}
+
+.amount-section h2, .amount-section p {
+    margin-top: 50px;
+}
+
+
+
+.qr-section {
+    background-color: #ffffff;
+}
+
+.qr-section h2, .qr-section img {
+    margin-top: 0px;
+}
+
+
+.amount {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+}
+
+.foot p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: aquamarine;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .amount-section h2, .amount-section p {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .qr-section h2 {
+        font-size: 25px;
+    }
+    .qr-section img{
+        height: 150px;
+        width: 150px;
+    }
+}
+/* for mobiles phone */
+
+
+@media screen and (max-width: 480px){
+    #payment{
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .amount-section h2, .amount-section p {
+        font-size: 15px;
+    }
+
+    .qr-section{
+        padding: 30px;
+    }
+
+    .qr-section h2 {
+        font-size: 15px;
+    }
+    .qr-section img{
+        height: 150px;
+        width: 150px;
+    }
+}

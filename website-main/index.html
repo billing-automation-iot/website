@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftscan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="home">
+        <div class="header">
+            <header class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-text">swiftscan</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button type="button" class="menu-button">
+                    <img onclick="showSidebar()" src="menu.svg" alt="menubutton" class="menu-icon">
+                </button>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#150202"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+        </div>
+        <section id="products">
+            <div class="container">
+                <div class="cart">
+                    <h2>Product list</h2>
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Sr No.</th>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Weight (kg)</th>
+                                <th>Amount</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <button id="checkout-btn"><a href="payment.html">Checkout</a></button>
+                </div>
+            </div>
+        </section>
+        <footer class="foot">
+            <p>swiftscan Technologies</p>
+        </footer>
+    </section>
+    
+</body>
+<script src="main.js"></script>
+
+</html>
+
+</html>

@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(241, 246, 245);
+    padding: 1.1rem;
+    
+}
+
+#home{
+    border: 2px solid black;
+    border-radius:30px ;
+    min-height: 95vh;
+}
+.header {
+    background-color: aquamarine;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 1rem;
+}
+
+.header-content {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav {
+    display: none;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 650px) {
+    .nav {
+        display: flex;
+    }
+}
+
+.nav-link {
+    color: #111112;
+    font-size: 1.125em;
+    font-weight: 600;
+    transition: color 0.1s;
+}
+
+.nav-link:hover {
+    color: royalblue;
+}
+.menu-button {
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: aquamarine;
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+    .menu-button {
+        display: block;
+    }
+
+}
+.menu-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+ul{
+    /* width: 100%; */
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    height: 50px;
+}
+li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+li a:hover{
+    background-color: rgb(114, 228, 228);
+    color: rgb(14, 50, 82);
+}
+li:first-child{
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    height: 40vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(240, 248, 255, 0.422);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+#products {
+    padding: 75px;
+    margin: 120px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cart {
+    padding: 20px;
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cart-table th, #cart-table td {
+    padding: 10px;
+    border: 2px solid #150303;
+}
+
+#checkout-btn {
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #17bbe8;
+    color: rgb(248, 238, 238);
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#checkout-btn a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        font-size: 14px;
+    }
+    .cart{
+        padding: 102px 0;
+        margin: 100px 0;
+    }
+    header{
+        padding: 15px;
+    }
+    #products{
+        padding: 0px;
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .cart{
+        padding: 100px 0;
+        margin: 105px 0;
+    }
+    #cart-table th, #cart-table td {
+        padding: 6px;
+        border: 2px solid #150303;
+    }
+    footer {
+        padding: 0px;
+    }
+    #checkout-btn {
+        height: 39px;
+        width: 99px;
+        margin-top: 28px;
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+.foot p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: aquamarine;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
